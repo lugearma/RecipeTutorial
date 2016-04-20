@@ -21,6 +21,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="rSi-Fr-Cc3" kind="show" id="v2d-gs-3FL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -28,35 +31,49 @@
                             <outlet property="delegate" destination="BYZ-38-t0r" id="DnS-gJ-gDO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="pLm-xo-VNh"/>
+                    <navigationItem key="navigationItem" id="pLm-xo-VNh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kiM-rW-ySp">
+                            <connections>
+                                <segue destination="ExS-R4-MOi" kind="show" id="VLJ-Ac-qW0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1025.5" y="-379.5"/>
         </scene>
-        <!--AddMeal-->
+        <!--Add Meal-->
         <scene sceneID="QWg-Qt-Aau">
             <objects>
-                <viewController title="AddMeal" id="ExS-R4-MOi" sceneMemberID="viewController">
+                <viewController title="Add Meal" id="ExS-R4-MOi" customClass="AddMeal" customModule="RecipeTutorial" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ssm-J2-yUO"/>
                         <viewControllerLayoutGuide type="bottom" id="l0G-3a-YC9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bih-oh-ZW1">
+                    <view key="view" contentMode="scaleToFill" id="bih-oh-ZW1" customClass="AddMealViewController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ypf-8O-HxB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="Ypf-8O-HxB" id="e4U-Ql-Lsg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIC-o9-ocz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1484.5" y="-379.5"/>
         </scene>
-        <!--DetailMeal-->
+        <!--Detail Meal-->
         <scene sceneID="KQa-61-zkj">
             <objects>
-                <viewController title="DetailMeal" id="rSi-Fr-Cc3" sceneMemberID="viewController">
+                <viewController title="Detail Meal" id="rSi-Fr-Cc3" customClass="DetailMeal" customModule="RecipeTutorial" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TSd-1l-kNa"/>
                         <viewControllerLayoutGuide type="bottom" id="Wu7-ia-CRG"/>
@@ -64,9 +81,17 @@
                     <view key="view" contentMode="scaleToFill" id="ZfW-D3-lfy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yka-3V-ad7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="Yka-3V-ad7" id="Xb6-I7-2nh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DgE-ms-abs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
