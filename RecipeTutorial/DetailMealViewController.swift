@@ -10,10 +10,14 @@ import UIKit
 
 class DetailMeal: UIViewController{
     
+    @IBOutlet weak var detailContent: UITextView!
     @IBOutlet weak var backgroundImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        detailContent.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+        detailContent.textColor = UIColor.whiteColor()
         
         blurEffect()
     }

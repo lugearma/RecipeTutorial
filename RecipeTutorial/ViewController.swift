@@ -22,8 +22,13 @@ class ViewController: UITableViewController {
         backgroundImage.contentMode = UIViewContentMode.ScaleAspectFill
         tableView.rowHeight = 70
         tableView.backgroundView = self.backgroundImage
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let navBar = navigationController!.navigationBar
         
-        
+        //Color for arrows and bar buttons
+        navBar.tintColor = UIColor.blackColor()
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,6 +58,7 @@ class ViewController: UITableViewController {
         
         //Give to each cell its content
         cell.textLabel?.text = items[indexPath.item]
+        cell.textLabel?.textColor = UIColor.whiteColor()
         
         if(indexPath.item % 2 == 0){
             cell.backgroundColor = UIColor.clearColor()

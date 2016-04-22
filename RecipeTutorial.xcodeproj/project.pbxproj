@@ -101,14 +101,14 @@
 		9233D6D01CC44DE10069D3A3 /* RecipeTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				9233D6D11CC44DE10069D3A3 /* AppDelegate.swift */,
 				9233D6D31CC44DE10069D3A3 /* ViewController.swift */,
+				9233D7031CC4A13C0069D3A3 /* DetailMealViewController.swift */,
+				926E95E51CC7195100FC57B9 /* AddMealViewController.swift */,
+				9233D6D11CC44DE10069D3A3 /* AppDelegate.swift */,
 				9233D6D51CC44DE10069D3A3 /* Main.storyboard */,
 				9233D6D81CC44DE10069D3A3 /* Assets.xcassets */,
 				9233D6DA1CC44DE10069D3A3 /* LaunchScreen.storyboard */,
 				9233D6DD1CC44DE10069D3A3 /* Info.plist */,
-				9233D7031CC4A13C0069D3A3 /* DetailMealViewController.swift */,
-				926E95E51CC7195100FC57B9 /* AddMealViewController.swift */,
 			);
 			path = RecipeTutorial;
 			sourceTree = "<group>";

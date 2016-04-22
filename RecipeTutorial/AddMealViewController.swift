@@ -10,11 +10,18 @@ import UIKit
 
 class AddMeal: UIViewController{
     
+    @IBOutlet weak var titleText: UITextField!
+    @IBOutlet weak var recipeContent: UITextView!
     
     @IBOutlet weak var backgroundImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleText.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+        titleText.textColor = UIColor.whiteColor()
+        recipeContent.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+        recipeContent.textColor = UIColor.whiteColor()
         
         blurEffect()
     }
